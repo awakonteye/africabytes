@@ -1,0 +1,50 @@
+.equipe-section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.equipe-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-media img {
+    width: 100%;
+}
+.card-box{
+    display: flex;
+    flex-direction: column;
+}
+.card-text h2{
+    font-size: 36px;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+  
+    padding-left: 30px;
+}
+.card-text p{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+ 
+    padding-left: 30px;
+}
+
+.title1 {
+    font-size: 30px;
+}
+
+.card-content {
+    padding: 30px;
+}
+.card-content img{
+    height: 40px;
+    width: 40px;
+}
+
+.title2 {
+    color: white;
+}

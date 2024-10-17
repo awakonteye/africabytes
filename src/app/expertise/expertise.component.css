@@ -1,0 +1,42 @@
+.expertise-section {
+    /* height: 529px; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #232323;
+}
+.expertise-container {
+    display: flex;
+    flex-direction: column;
+}
+.expertise-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    align-items: center;
+    gap: 20px;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 40px;
+    width: 100%;
+    background: #F9F9F9;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+}
+
+.card-box img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.card-box h5 {
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.card2 {
+    background-color: #0D5C63;
+    color: #FFFFFF;
+}

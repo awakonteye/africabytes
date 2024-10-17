@@ -1,0 +1,28 @@
+.formation-section {
+    background-color: white;
+   
+}
+.formation-container{
+    display: flex;
+    flex-direction: column;
+}
+.main-content h2 {
+    color: black;
+}
+.main-content p {
+    color: black;
+}
+.formation-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 30px;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-box img{
+    width: 100%;
+}

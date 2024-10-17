@@ -1,0 +1,17 @@
+<nav>
+  <a routerLink="/">
+    <img src="./assets/picture/Vector.png" class="logo" />
+  </a>
+
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <i class='bx' [ngClass]="isMenuOpen ? 'bx-x' : 'bx-menu'"></i> 
+  </button>
+
+  <ul class="navbar" [class.active]="isMenuOpen">
+    <li><a href="#expertise" (click)="closeMenu()">Expertise</a></li>
+    <li><a href="#formation" (click)="closeMenu()">Formations</a></li>
+    <li><a href="#equipe" (click)="closeMenu()">Equipe</a></li>
+    <li><a href="#partenaire" (click)="closeMenu()">Partenaires</a></li>
+    <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+  </ul>
+</nav>
