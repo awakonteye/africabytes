@@ -9,22 +9,22 @@
       <mat-form-field required style="width: 290px;">
         <input matInput placeholder="Prenom" formControlName="prenom">
         <mat-icon matSuffix>person</mat-icon>
-        <mat-error *ngIf="myForm.get('prenom')?.hasError?.('required')">Le prénom est requis.</mat-error>
+        <mat-error *ngIf="myForm.get('prenom')?.hasError?.('required')">Le prénom est obligatoire.</mat-error>
       </mat-form-field>
       <mat-form-field style="width: 290px;">
         <input matInput placeholder="Nom" formControlName="nom" required>
         <mat-icon matSuffix>person</mat-icon>
-        <mat-error *ngIf="myForm.get('nom')?.hasError?.('required')">Le nom est requis.</mat-error>
+        <mat-error *ngIf="myForm.get('nom')?.hasError?.('required')">Le nom est obligatoire.</mat-error>
       </mat-form-field>
       <mat-form-field style="width: 290px;">
         <input matInput placeholder="Email" formControlName="email" required>
         <mat-icon matSuffix>drafts</mat-icon>
-        <mat-error *ngIf="myForm.get('email')?.hasError?.('required')">L'email est requis.</mat-error>
+        <mat-error *ngIf="myForm.get('email')?.hasError?.('required')">L'email est obligatoire.</mat-error>
         <mat-error *ngIf="myForm.get('email')?.hasError?.('email')">Email invalide.</mat-error>
       </mat-form-field>
       <mat-form-field appearance="fill" style="width: 290px;">
         <mat-label>Choisissez votre profession</mat-label>
-        <mat-error *ngIf="myForm.get('profession')?.hasError?.('required')">Le message est requis.</mat-error>
+        <mat-error *ngIf="myForm.get('profession')?.hasError?.('required')">Le message est obligatoire.</mat-error>
         <mat-select formControlName="profession" [(value)]="selectedProfession">
          <mat-option *ngFor="let profession of professions" [value]="profession">
            {{ profession }}
@@ -35,7 +35,7 @@
       <mat-form-field style="width: 290px;">
         <textarea matInput placeholder="Message" formControlName="message" required ></textarea>
         <mat-icon matSuffix>save</mat-icon>
-        <mat-error *ngIf="myForm.get('message')?.hasError?.('required')">Le message est requis.</mat-error>
+        <mat-error *ngIf="myForm.get('message')?.hasError?.('required')">Le message est obligatoire.</mat-error>
       </mat-form-field>
     </mat-dialog-content>
     
