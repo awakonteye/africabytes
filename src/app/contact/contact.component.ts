@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatDialogModule } from '@angular/material/dialog';
-import { FormulaireComponent } from '../formulaire/formulaire.component';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 // import { GoogleMapComponent } from '../google-map/google-map.component'; 
 
 @Component({
@@ -12,14 +12,17 @@ import { FormulaireComponent } from '../formulaire/formulaire.component';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-    constructor(private matDialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {}
 
-    // Ouvre le formulaire dans un dialogue
-    openFormulaire() {
-        this.matDialog.open(FormulaireComponent, {
-          width: '380px',
-        });
-    }
+  openContactForm(): void {
+    const dialogRef = this.dialog.open(ContactFormComponent, {
+      width: '400px',
+    });
+
+    dialogRef.afterClosed().subscribe(() => {
+      console.log('Contact form dialog closed');
+    });
+  }
 
     email: string = 'contact@africabytes.com'
 

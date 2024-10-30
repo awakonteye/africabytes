@@ -1,0 +1,49 @@
+<div class="outer-background">
+    <button class="close-button" (click)="closeForm()">×</button>
+    <div class="inner-background">
+      <h2>Comment pouvons-nous vous aider ?</h2>
+      <p>Veuillez remplir ce formulaire, nous vous contacterons au plus vite !</p>
+  
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <input id="firstName" type="text" formControlName="firstName" placeholder="Votre prénom" />
+            <span class="icon">👤</span>
+            <div *ngIf="contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid">
+              <small class="error">Le prénom est obligatoire.</small>
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <input id="lastName" type="text" formControlName="lastName" placeholder="Votre nom" />
+            <span class="icon">👤</span>
+            <div *ngIf="contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid">
+              <small class="error">Le nom est obligatoire.</small>
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <input id="email" type="email" formControlName="email" placeholder="Votre adresse mail" />
+            <span class="icon">📧</span>
+            <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+              <small class="error" *ngIf="contactForm.get('email')?.errors?.['required']">L'email est obligatoire.</small>
+              <small class="error" *ngIf="contactForm.get('email')?.errors?.['email']">Email invalide.</small>
+            </div>
+          </div>
+  
+        <div class="form-group">
+          <input id="profession" type="text" formControlName="profession" placeholder="Votre profession" />
+          <span class="icon">💼</span>
+        </div>
+  
+        <div class="form-group">
+          <textarea id="message" formControlName="message" placeholder="Dites nous plus sur votre demande"></textarea>
+        </div>
+  
+        <div class="form-actions">
+          <button type="button" class="btn-upload" >Joindre un fichier</button>
+          <button mat-raised-button type="submit" class="btn-submit" [disabled]="contactForm.invalid">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

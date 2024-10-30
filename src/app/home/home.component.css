@@ -25,7 +25,7 @@
 
 .home-content h5 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     color: #FFFFFF;
     letter-spacing: 0.2px;
@@ -72,6 +72,9 @@
 }
 
 @media screen and (max-width: 690px) {
+    .home-content h5{
+        white-space: nowrap;
+    }
     .home-content h1 {
         line-height: 2.5rem;
     }

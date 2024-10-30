@@ -1,0 +1,123 @@
+/* Style pour le fond extérieur */
+.outer-background {
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Bouton de fermeture */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .close-button:hover {
+    background-color: #B71C1C;
+    padding: 10px;
+    color: white;
+}
+  
+  /* Style pour le fond intérieur */
+  .inner-background {
+    background-color: black;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    color: white;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  /* Champs du formulaire */
+  .form-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    color: #333;
+  }
+  
+  textarea {
+    height: 80px;
+    resize: vertical;
+  }
+  
+  /* Icône dans les champs */
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  /* Boutons */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-upload {
+    background-color: #ccc;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-submit {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .form-group .error {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: left; /* Aligne le texte à gauche */
+    display: block; /* Assurez-vous qu'il s'affiche comme un bloc */
+  }
+  .btn-submit {
+    background-color: #e74c3c; /* Couleur par défaut du bouton */
+    color: white; /* Couleur du texte par défaut */
+  }
+  
+  .btn-submit:disabled {
+    background-color: white; /* Couleur de fond lorsque le bouton est désactivé */
+    color: black; /* Couleur du texte lorsque le bouton est désactivé */
+    border: 1px solid #e74c3c; /* Optionnel : ajoute une bordure pour le contraste */
+  }
+    
+  
+  
