@@ -45,6 +45,9 @@
     font-size: 1rem;
     color: white;
 }
+.footer-content p {
+    word-wrap: break-word;
+}
 @media screen and (max-width: 690px){
     .footer-content p {
         word-wrap: break-word;
