@@ -1,6 +1,6 @@
 
 .footer-section {
-    background: linear-gradient(to bottom, #fff 60%, black 40%);
+    background: linear-gradient(to bottom, #fff 65%, black 35%);
     color: black;
 }
 .footer-container{
@@ -13,6 +13,9 @@
 .footer-content h2 {
     margin-bottom: 10px;
     font-size: 1.8rem;
+}
+.footer-content p {
+    white-space: nowrap;
 }
 
 .footer-btn a {
